@@ -1,0 +1,67 @@
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: lightblue;
+    }
+    .bundle-card {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .bundle-books {
+        /* background-color: white; */
+        flex-grow: 1;
+        flex-direction: row;
+
+        position: relative;
+        top: 3rem;
+    }
+
+    .bundle-book-cover {
+        width: 10rem;
+        height: 12.5rem;
+    }
+
+    .cart-card {
+        grid-template-columns: 2rem 1fr 1fr auto;
+    }
+
+    .amount {
+        grid-column: 4 / 5;
+        grid-row: 1 / span 2;
+    
+        justify-content: center;
+    }
+
+    .product-detail {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .order {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+    .product-info {
+        align-self: start;
+    }
+
+    .order .btn {
+        flex-shrink: 0;
+    }
+
+    .product-title {
+        align-self: center;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 1000px) {
+    body {
+        width: 80%;
+        margin: auto;
+    }
+}
